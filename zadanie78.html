@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> </title>
+  <script language="JavaScript">
+  
+  
+  
+  
+	var liczba1=prompt("R = ","");
+	var R=parseFloat(liczba1);
+	
+	licznik_luk=0;
+	for (var i=-Math.round(R)-1;i<=Math.round(R)+1;i++)
+	{
+		for (var j=-Math.round(R)-1;j<=Math.round(R)+1;j++)
+		{
+		d=Math.sqrt(i*i+j*j);
+		if (d<=R)
+		{
+			licznik_luk++;
+		}
+		document.write("("+i+" , "+j+")"+"   ");
+		}
+	document.write("<br>");
+	}
+	
+	
+	document.write("<br><br><br>Ilość punktów kratowych jest równa "+licznik_luk+". ");
+	
+  </script>
+ </head>	
+  <body>
+  </body>
+<html>
